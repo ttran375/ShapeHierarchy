@@ -450,37 +450,24 @@ There are no methods
 
 Copy the following lines to the Main method in the Program.cs file.
 
-<span class="mark">//although Shape is an abstract is can be used as a
-reference type</span>
+``` cs
+//although Shape is an abstract is can be used as a reference type
+//any child class of Shape is also a Shape
+List<Shape> shapes = new List<Shape>();
 
-<span class="mark">//any child class of Shape is also a Shape</span>
+shapes.Add(new Square("s1", 2));
+shapes.Add(new Rectangle("r1", 2, 3));
+shapes.Add(new Circle("c1", 2));
+shapes.Add(new Triangle("t1", 4, 6));
+shapes.Add(new Ellipse("e1", 2, 3));
+shapes.Add(new Diamond("d1", 2, 3));
+shapes.Add(new Square("s2", 5));
+shapes.Add(new Rectangle("r2", 5, 4));
+shapes.Add(new Circle("c2", 1));
+shapes.Add(new Triangle("t2", 7, 8));
 
-<span class="mark">List\<Shape\> shapes = new List\<Shape\>();</span>
-
-<span class="mark">shapes.Add(new Square("s1", 2));</span>
-
-<span class="mark">shapes.Add(new Rectangle("r1", 2, 3));</span>
-
-<span class="mark">shapes.Add(new Circle("c1", 2));</span>
-
-<span class="mark">shapes.Add(new Triangle("t1", 4, 6));</span>
-
-<span class="mark">shapes.Add(new Ellipse("e1", 2, 3));</span>
-
-<span class="mark">shapes.Add(new Diamond("d1", 2, 3));</span>
-
-<span class="mark">shapes.Add(new Square("s2", 5));</span>
-
-<span class="mark">shapes.Add(new Rectangle("r2", 5, 4));</span>
-
-<span class="mark">shapes.Add(new Circle("c2", 1));</span>
-
-<span class="mark">shapes.Add(new Triangle("t2", 7, 8));</span>
-
-<span class="mark">foreach (var s in shapes)</span>
-
-<span class="mark">{</span>
-
-<span class="mark">Console.WriteLine(s);</span>
-
-<span class="mark">}</span>
+foreach (var s in shapes)
+{
+    Console.WriteLine(s);
+}
+```
