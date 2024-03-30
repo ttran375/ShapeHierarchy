@@ -1,26 +1,3 @@
-In this exercise you will be using inheritance to promote code re-use.
-
-# You must follow the specifications exactly (To demo to instructor at the end of this class)
-
-Because the required code statements is very few, you may choose to
-implement all the classes in a single code file
-
-<img src="./media/image1.png" style="width:6.5in;height:4.04583in" />
-
-There are seven classes participating in this application as shown in
-the diagram above. Each of the seven classes is fully described below.
-
-You will need to “google” how to declare an abstract property.
-
-Not all base classes are abstract
-
-**Object** is the parent class of all classes and it is not abstract.
-
-**Square** is the parent class of **Circle** and it is not abstract.
-
-Similarly **Rectangle** is the parent class of **Ellipse**, **Triangle**
-and **Diamond** and it is not declared abstract.
-
 # The Shape class
 
 This abstract class comprises of four members:
@@ -56,6 +33,22 @@ name)</strong></p>
 </tr>
 </tbody>
 </table>
+
+<img src="./media/image1.png" style="width:6.5in;height:4.04583in" />
+
+There are seven classes participating in this application as shown in
+the diagram above. Each of the seven classes is fully described below.
+
+You will need to “google” how to declare an abstract property.
+
+Not all base classes are abstract
+
+**Object** is the parent class of all classes and it is not abstract.
+
+**Square** is the parent class of **Circle** and it is not abstract.
+
+Similarly **Rectangle** is the parent class of **Ellipse**, **Triangle**
+and **Diamond** and it is not declared abstract.
 
 #### Description of class members
 
